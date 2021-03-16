@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,43 +10,59 @@
     <link rel="icon" href="img/pizza-icon.ico">
     <title>Pizza configurator</title>
 </head>
+
 <body>
 
-    <nav id="nav" class="nav">
+    <header id="header" class="header">
         <div class="container">
-            <div class="nav__inner">
-                <div class="nav__logo">
-                    <img class="nav__logo-image" src="img/logo.png" alt="Logotype">
+            <div class="header__inner">
+                <div id="header__logo" class="header__logo">
+                    <img class="header__logo-image" src="img/logo.png" alt="Logotype">
                 </div>
 
-                <ul class="nav__items">
+                <ul id="nav" class="nav nav__items">
                     <li class="nav__item">
                         <a class="nav__item-link" href="#">
-                            Пиццы
+                            <img src="img/pizza-icon.png" alt="Pizza icon"> Пиццы
                         </a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__item-link" href="#">
-                            Конструктор свой пиццы
+                            <img src="img/constructor-icon.png" alt="Constructor icon"> Конструктор уникальной пиццы
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__item-link">
-                            Напитки
+                            <img src="img/drink-icon.png" alt="Drink icon"> Напитки
                         </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link">
+                            <img src="img/dessert-icon.png" alt="Drink icon"> Десерты
+                        </a>
+                    </li>
+                    <li id="nav__close" class="nav__close">
+                        <img class="nav__close-image" src="img/close-icon.png" alt="Close icon">
                     </li>
                 </ul>
 
-                <div class="nav__cart">
-                    <a href="#" class="nav__cart-link">
-                        <img src="img/cart.png" alt="Cart" class="nav__cart-image">
-                        <div class="nav__cart-counter">0</div>
+                <div class="header__cart">
+                    <a href="#" class="header__cart-link">
+                        <img src="img/cart.png" alt="Cart" class="header__cart-image">
+                        <div class="header__cart-counter">0</div>
                     </a>
                 </div>
-            </div> <!-- ./nav__inner -->
+
+                <div id="header__burger" class="header__burger">
+                    <img class="header__burger-image" src="img/burger-icon.png" alt="Burger icon">
+                </div>
+            </div> <!-- ./header__inner -->
         </div> <!-- ./container -->
-    </nav> <!-- ./nav -->
-    
+    </header> <!-- ./header -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

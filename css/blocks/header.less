@@ -1,11 +1,10 @@
 // main: ../style.less
 
-.nav {
+.header {
     box-shadow: -1px 4px 6px 0px #dedede;
-    padding: 10px 25px;
+    padding: 10px 0;
     background-color: #fff;
 
-    //position: fixed;
     width: 100%;
     position: fixed;
     transition: .3s linear;
@@ -16,24 +15,26 @@
     }
 }
 
-.nav__inner {
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav__logo {
+.header__logo {
     margin-top: -10px;
 }
 
-.nav__logo-image {
+.header__logo-image {
     max-width: 80px;
     height: auto;
 }
 
 .nav__items {
     display: flex;
+    justify-content: space-between;
     list-style: none;
+    align-items: center;
 }
 
 .nav__item {
@@ -73,19 +74,20 @@
     }
 }
 
-.nav__cart {
-    margin-top: -20px;
+.header__cart {
+    margin-top: -10px;
+    display: block;
 }
 
-.nav__cart-image {
+.header__cart-image {
     display: block;
-    max-width: 40px;
+    width: 40px;
     height: auto;
 
     position: absolute;
 }
 
-.nav__cart-counter {
+.header__cart-counter {
     position: relative;
     font-size: 12px;
     bottom: 8px;
@@ -94,4 +96,17 @@
     color: white;
     padding: 2px 7px;
     border-radius: 50%;
+}
+
+.header__burger {
+    display: none;
+
+    &-image {
+        width: 60px;
+        cursor: pointer;
+    }
+}
+
+.nav__close {
+    display: none;
 }

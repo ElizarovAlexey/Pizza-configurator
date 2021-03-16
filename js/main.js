@@ -1,16 +1,37 @@
-// Change styles on the fixed nav
+// Change styles on the fixed header
 
-const fixedNav = () => {
-    const nav = document.getElementById('nav');
-    const navHeight = nav.clientHeight;
+const fixedHeader = () => {
+    const header = document.getElementById('header');
+    const headerHeight = header.clientHeight;
 
     window.onscroll = () => {
-        if (window.scrollY > navHeight) {
-            nav.classList.add('nav--fixed');
+        if (window.scrollY > headerHeight) {
+            header.classList.add('header--fixed');
         } else {
-            nav.classList.remove('nav--fixed');
+            header.classList.remove('header--fixed');
         }
     }
 }
 
-fixedNav();
+fixedHeader();
+
+// Burger menu
+
+const burgerHandler = () => {
+    const headerBurger = document.getElementById('header__burger');
+    const navMenu = document.getElementById('nav');
+    const headerLogo = document.getElementById('header__logo');
+    const navMenuClose = document.getElementById('nav__close');
+
+    headerBurger.addEventListener('click', () => {
+        navMenu.classList.add('nav--fixed');
+        headerLogo.classList.add('header__logo--fixed');
+    });
+
+    navMenuClose.addEventListener('click', () => {
+        navMenu.classList.remove('nav--fixed');
+        headerLogo.classList.remove('header__logo--fixed');
+    });
+}
+
+burgerHandler();
