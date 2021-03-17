@@ -38,6 +38,10 @@
 
     background-color: #fdfbfb;
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .pizzas__item-image {
@@ -115,8 +119,8 @@
     background-color: #dedede;
 }
 
-.pizzas-item-wrapper {
-    max-width: 250px;
+.pizzas__item-wrapper {
+    width: 250px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -127,6 +131,7 @@
 
 .btn-tocart {
     cursor: pointer;
+    display: block;
     padding: 15px 25px;
     font-size: 16px;
     font-weight: 600;
@@ -157,4 +162,8 @@
     &:hover {
         transform: scale(1.2);
     }
+}
+
+.pizzas__item-price {
+    font-weight: 500;
 }

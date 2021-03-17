@@ -23,24 +23,24 @@
 
                 <ul id="nav" class="nav nav__items">
                     <li class="nav__item">
-                        <a class="nav__item-link" href="#">
+                        <a href="#pizzas" class="nav__item-link js-scroll">
                             <img src="img/icons/pizza-icon.png" alt="Pizza icon"> Пиццы
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#desserts" class="nav__item-link js-scroll">
+                            <img src="img/icons/dessert-icon.png" alt="Drink icon"> Десерты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#drinks" class="nav__item-link js-scroll">
+                            <img src="img/icons/drink-icon.png" alt="Drink icon"> Напитки
                         </a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__item-link" href="#">
                             <img src="img/icons/constructor-icon.png" alt="Constructor icon"> Конструктор уникальной
                             пиццы
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__item-link">
-                            <img src="img/icons/drink-icon.png" alt="Drink icon"> Напитки
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__item-link">
-                            <img src="img/icons/dessert-icon.png" alt="Drink icon"> Десерты
                         </a>
                     </li>
                     <li id="nav__close" class="nav__close">
@@ -100,7 +100,7 @@
 
 
     <!-- Pizzas -->
-    <section class="pizzas">
+    <section id="pizzas" class="pizzas">
         <div class="container">
             <div class="pizzas__inner">
 
@@ -129,7 +129,7 @@
                             <button class="pizzas__item-size">35</button>
                             <button class="pizzas__item-size">40</button>
                         </div>
-                        <div class="pizzas-item-wrapper">
+                        <div class="pizzas__item-wrapper">
                             <button class="btn-tocart pizzas__item-tocart">В корзину</button>
                             <p class="pizzas__item-price">8$</p>
                         </div>
@@ -157,7 +157,7 @@
                             <button class="pizzas__item-size">35</button>
                             <button class="pizzas__item-size">40</button>
                         </div>
-                        <div class="pizzas-item-wrapper">
+                        <div class="pizzas__item-wrapper">
                             <button class="btn-tocart pizzas__item-tocart">В корзину</button>
                             <p class="pizzas__item-price">8$</p>
                         </div>
@@ -185,7 +185,7 @@
                             <button class="pizzas__item-size">35</button>
                             <button class="pizzas__item-size">40</button>
                         </div>
-                        <div class="pizzas-item-wrapper">
+                        <div class="pizzas__item-wrapper">
                             <button class="btn-tocart pizzas__item-tocart">В корзину</button>
                             <p class="pizzas__item-price">8$</p>
                         </div>
@@ -213,7 +213,7 @@
                             <button class="pizzas__item-size">35</button>
                             <button class="pizzas__item-size">40</button>
                         </div>
-                        <div class="pizzas-item-wrapper">
+                        <div class="pizzas__item-wrapper">
                             <button class="btn-tocart pizzas__item-tocart">В корзину</button>
                             <p class="pizzas__item-price">8$</p>
                         </div>
@@ -241,7 +241,7 @@
                             <button class="pizzas__item-size">35</button>
                             <button class="pizzas__item-size">40</button>
                         </div>
-                        <div class="pizzas-item-wrapper">
+                        <div class="pizzas__item-wrapper">
                             <button class="btn-tocart pizzas__item-tocart">В корзину</button>
                             <p class="pizzas__item-price">8$</p>
                         </div>
@@ -269,7 +269,7 @@
                             <button class="pizzas__item-size">35</button>
                             <button class="pizzas__item-size">40</button>
                         </div>
-                        <div class="pizzas-item-wrapper">
+                        <div class="pizzas__item-wrapper">
                             <button class="btn-tocart pizzas__item-tocart">В корзину</button>
                             <p class="pizzas__item-price">8$</p>
                         </div>
@@ -282,8 +282,200 @@
     </section> <!-- /.pizzas -->
 
 
+    <!-- Desserts -->
+    <section id="desserts" class="desserts">
+        <div class="container">
+            <div class="desserts__inner">
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+                <h1 class="desserts__title">Десерты</h1>
+
+                <div class="pizzas__items desserts__items">
+                    <div class="pizzas__item desserts__item">
+                        <div class="pizzas__item-img desserts__item-img">
+                            <img class="pizzas__item-image desserts__item-image" src="img/products/dessert1.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title desserts__item-title">Mагнат Mини</p>
+                        <p class="pizzas__item-description desserts__item-description">
+                            Набор из 2 видов мороженого: Магнат Шоколадный трюфель, Магнат Манго и красные ягоды.
+                        </p>
+                        <div class="desserts__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="desserts__item-price pizzas__item-price">3$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item desserts__item">
+                        <div class="pizzas__item-img desserts__item-img">
+                            <img class="pizzas__item-image desserts__item-image" src="img/products/dessert2.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title desserts__item-title">Магнат DOUBLE Соленая карамель Пинта</p>
+                        <p class="pizzas__item-description desserts__item-description">
+                            Сливочное мороженое с жидким карамельным соусом внутри капсулы из шоколада.
+                        </p>
+                        <div class="desserts__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="desserts__item-price pizzas__item-price">2.5$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item desserts__item">
+                        <div class="pizzas__item-img desserts__item-img">
+                            <img class="pizzas__item-image desserts__item-image" src="img/products/dessert3.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title desserts__item-title">Шоко Скроллы</p>
+                        <p class="pizzas__item-description desserts__item-description">
+                            Много шоколада! Роллы с шоколадной начинкой, политые шоколадом с шоколадной крошкой.
+                        </p>
+                        <div class="desserts__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="desserts__item-price pizzas__item-price">4$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item desserts__item">
+                        <div class="pizzas__item-img desserts__item-img">
+                            <img class="pizzas__item-image desserts__item-image" src="img/products/dessert1.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title desserts__item-title">Mагнат Mини</p>
+                        <p class="pizzas__item-description desserts__item-description">
+                            Набор из 2 видов мороженого: Магнат Шоколадный трюфель, Магнат Манго и красные ягоды.
+                        </p>
+                        <div class="desserts__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="desserts__item-price pizzas__item-price">3$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item desserts__item">
+                        <div class="pizzas__item-img desserts__item-img">
+                            <img class="pizzas__item-image desserts__item-image" src="img/products/dessert2.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title desserts__item-title">Магнат DOUBLE Соленая карамель Пинта</p>
+                        <p class="pizzas__item-description desserts__item-description">
+                            Сливочное мороженое с жидким карамельным соусом внутри капсулы из шоколада.
+                        </p>
+                        <div class="desserts__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="desserts__item-price pizzas__item-price">2.5$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item desserts__item">
+                        <div class="pizzas__item-img desserts__item-img">
+                            <img class="pizzas__item-image desserts__item-image" src="img/products/dessert3.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title desserts__item-title">Шоко Скроллы</p>
+                        <p class="pizzas__item-description desserts__item-description">
+                            Много шоколада! Роллы с шоколадной начинкой, политые шоколадом с шоколадной крошкой.
+                        </p>
+                        <div class="desserts__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="desserts__item-price pizzas__item-price">4$</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./desserts__inner -->
+        </div> <!-- ./container -->
+    </section> <!-- ./desserts -->
+
+
+    <!-- Drinks -->
+    <section id="drinks" class="drinks">
+        <div class="container">
+            <div class="drinks__inner">
+
+                <h1 class="drinks__title">Напитки</h1>
+
+                <div class="pizzas__items drinks__items">
+                    <div class="pizzas__item drinks__item">
+                        <div class="pizzas__item-img drinks__item-img">
+                            <img class="pizzas__item-image drinks__item-image" src="img/products/drink1.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title drinks__item-title">Напиток Малиновый с Мятой</p>
+                        <p class="pizzas__item-description drinks__item-description">
+                            Напиток из пюре ягод малины, экстракта мяты и сахара.
+                        </p>
+                        <div class="drinks__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart drinks__item-tocart">В корзину</button>
+                            <p class="drinks__item-price pizzas__item-price">3$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item drinks__item">
+                        <div class="pizzas__item-img drinks__item-img">
+                            <img class="pizzas__item-image drinks__item-image" src="img/products/drink2.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title drinks__item-title">Морс Облепиховый</p>
+                        <p class="pizzas__item-description drinks__item-description">
+                            Морс из пюре ягод облепихи и сахара.
+                        </p>
+                        <div class="drinks__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart drinks__item-tocart">В корзину</button>
+                            <p class="drinks__item-price pizzas__item-price">3$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item drinks__item">
+                        <div class="pizzas__item-img drinks__item-img">
+                            <img class="pizzas__item-image drinks__item-image" src="img/products/drink3.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title drinks__item-title">Морс Клюквенный</p>
+                        <p class="pizzas__item-description drinks__item-description">
+                            Морс из пюре ягод клюквы с сахаром.
+                        </p>
+                        <div class="drinks__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart drinks__item-tocart">В корзину</button>
+                            <p class="drinks__item-price pizzas__item-price">3$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item drinks__item">
+                        <div class="pizzas__item-img drinks__item-img">
+                            <img class="pizzas__item-image drinks__item-image" src="img/products/drink1.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title drinks__item-title">Напиток Малиновый с Мятой</p>
+                        <p class="pizzas__item-description drinks__item-description">
+                            Напиток из пюре ягод малины, экстракта мяты и сахара.
+                        </p>
+                        <div class="drinks__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart drinks__item-tocart">В корзину</button>
+                            <p class="drinks__item-price pizzas__item-price">3$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item drinks__item">
+                        <div class="pizzas__item-img drinks__item-img">
+                            <img class="pizzas__item-image drinks__item-image" src="img/products/drink2.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title drinks__item-title">Морс Облепиховый</p>
+                        <p class="pizzas__item-description drinks__item-description">
+                            Морс из пюре ягод облепихи и сахара.
+                        </p>
+                        <div class="drinks__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart drinks__item-tocart">В корзину</button>
+                            <p class="drinks__item-price pizzas__item-price">3$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item drinks__item">
+                        <div class="pizzas__item-img drinks__item-img">
+                            <img class="pizzas__item-image drinks__item-image" src="img/products/drink3.webp" alt="pizza">
+                        </div>
+                        <p class="pizzas__item-title drinks__item-title">Морс Клюквенный</p>
+                        <p class="pizzas__item-description drinks__item-description">
+                            Морс из пюре ягод клюквы с сахаром.
+                        </p>
+                        <div class="drinks__item-wrapper pizzas__item-wrapper">
+                            <button class="btn-tocart drinks__item-tocart">В корзину</button>
+                            <p class="drinks__item-price pizzas__item-price">3$</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./drinks__inner -->
+        </div> <!-- ./container -->
+    </section> <!-- ./drinks -->
+
+
     <script src="js/main.js"></script>
 </body>
 
