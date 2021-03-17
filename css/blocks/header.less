@@ -1,18 +1,23 @@
 // main: ../style.less
 
 .header {
-    box-shadow: -1px 4px 6px 0px #dedede;
-    padding: 10px 0;
+    box-shadow: -1px 3px 4px 0px #dedede;
     background-color: #fff;
 
     width: 100%;
-    position: fixed;
     transition: .3s linear;
+    z-index: 9;
+    padding-top: 5px;
 
     &--fixed {
-        background-color: rgba(#DF2828, 0.1);
         transition: .3s linear;
+        position: fixed;
+        z-index: 9;
     }
+}
+
+.header__container {
+    padding: 0 30px 0 0;
 }
 
 .header__inner {
@@ -26,7 +31,7 @@
 }
 
 .header__logo-image {
-    max-width: 80px;
+    max-width: 60px;
     height: auto;
 }
 
@@ -75,26 +80,25 @@
 }
 
 .header__cart {
-    margin-top: -10px;
+    margin-top: -20px;
     display: block;
 }
 
 .header__cart-image {
     display: block;
-    width: 40px;
+    width: 30px;
     height: auto;
-
     position: absolute;
 }
 
 .header__cart-counter {
     position: relative;
-    font-size: 12px;
-    bottom: 8px;
-    left: 28px;
+    font-size: 11px;
+    bottom: 6px;
+    left: 20px;
     background-color: @red;
     color: white;
-    padding: 2px 7px;
+    padding: 2px 6px;
     border-radius: 50%;
 }
 

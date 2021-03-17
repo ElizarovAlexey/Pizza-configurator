@@ -7,58 +7,280 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/pizza-icon.ico">
+    <link rel="icon" href="img/icons/pizza-icon.ico">
     <title>Pizza configurator</title>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header id="header" class="header">
-        <div class="container">
+        <div class="container header__container">
             <div class="header__inner">
                 <div id="header__logo" class="header__logo">
-                    <img class="header__logo-image" src="img/logo.png" alt="Logotype">
+                    <img class="header__logo-image" src="img/icons/logo.png" alt="Logotype">
                 </div>
 
                 <ul id="nav" class="nav nav__items">
                     <li class="nav__item">
                         <a class="nav__item-link" href="#">
-                            <img src="img/pizza-icon.png" alt="Pizza icon"> Пиццы
+                            <img src="img/icons/pizza-icon.png" alt="Pizza icon"> Пиццы
                         </a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__item-link" href="#">
-                            <img src="img/constructor-icon.png" alt="Constructor icon"> Конструктор уникальной пиццы
+                            <img src="img/icons/constructor-icon.png" alt="Constructor icon"> Конструктор уникальной
+                            пиццы
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__item-link">
-                            <img src="img/drink-icon.png" alt="Drink icon"> Напитки
+                            <img src="img/icons/drink-icon.png" alt="Drink icon"> Напитки
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__item-link">
-                            <img src="img/dessert-icon.png" alt="Drink icon"> Десерты
+                            <img src="img/icons/dessert-icon.png" alt="Drink icon"> Десерты
                         </a>
                     </li>
                     <li id="nav__close" class="nav__close">
-                        <img class="nav__close-image" src="img/close-icon.png" alt="Close icon">
+                        <img class="nav__close-image" src="img/icons/close-icon.png" alt="Close icon">
                     </li>
                 </ul>
 
                 <div class="header__cart">
                     <a href="#" class="header__cart-link">
-                        <img src="img/cart.png" alt="Cart" class="header__cart-image">
+                        <img src="img/icons/cart.png" alt="Cart" class="header__cart-image">
                         <div class="header__cart-counter">0</div>
                     </a>
                 </div>
 
                 <div id="header__burger" class="header__burger">
-                    <img class="header__burger-image" src="img/burger-icon.png" alt="Burger icon">
+                    <img class="header__burger-image" src="img/icons/burger-icon.png" alt="Burger icon">
                 </div>
             </div> <!-- ./header__inner -->
         </div> <!-- ./container -->
     </header> <!-- ./header -->
+
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slider__container">
+            <div class="slider__inner">
+
+                <div class="slider__items">
+                    <img class="slider__item" src="img/slider/slide1.png" alt="Slide">
+                    <img class="slider__item" src="img/slider/slide2.png" alt="Slide">
+                    <img class="slider__item" src="img/slider/slide3.png" alt="Slide">
+                    <img class="slider__item" src="img/slider/slide1.png" alt="Slide">
+                    <img class="slider__item" src="img/slider/slide2.png" alt="Slide">
+                    <img class="slider__item" src="img/slider/slide3.png" alt="Slide">
+                </div>
+
+                <div class="slider__arrows">
+                    <img id="arrow-left" class="slider__arrow slider__arrow--left" src="img/icons/left-arrow.png"
+                        alt="left arrow">
+
+                    <img id="arrow-right" class="slider__arrow slider__arrow--right" src="img/icons/right-arrow.png"
+                        alt="right arrow">
+                </div>
+
+                <div id="slider__dots" class="slider__dots">
+                    <div class="slider__dots-item slider__dots-item--active"></div>
+                    <div class="slider__dots-item"></div>
+                    <div class="slider__dots-item"></div>
+                    <div class="slider__dots-item"></div>
+                    <div class="slider__dots-item"></div>
+                    <div class="slider__dots-item"></div>
+                </div>
+
+            </div> <!-- ./slider__inner -->
+        </div> <!-- ./container -->
+    </div> <!-- ./slider -->
+
+
+    <!-- Pizzas -->
+    <section class="pizzas">
+        <div class="container">
+            <div class="pizzas__inner">
+
+                <h1 class="pizzas__title">Пиццы</h1>
+
+                <div class="pizzas__items">
+                    <div class="pizzas__item">
+                        <div class="pizzas__item-img">
+                            <img class="pizzas__item-image" src="img/products/pizza1.jpg" alt="pizza">
+                            <button class="pizzas__item-redactor-btn">
+                                <img src="img/icons/redburger-icon.png" alt="burger" class="pizzas__item-redactor-img">
+                            </button>
+                        </div>
+                        <p class="pizzas__item-title">Мясное барбекю</p>
+                        <p class="pizzas__item-description">
+                            Мясная пицца с пикантной пепперони, альпийскими колбасками,
+                            Моцареллой, фирменным томатным соусом, луком и соусом Барбекю.
+                        </p>
+                        <div class="pizzas__item-dough-container">
+                            <button class="pizzas__item-dough dough-selected">Тонкое</button>
+                            <button class="pizzas__item-dough">Традиционное</button>
+                        </div>
+                        <div class="pizzas__item-sizes">
+                            <button class="pizzas__item-size size-selected">25</button>
+                            <button class="pizzas__item-size">30</button>
+                            <button class="pizzas__item-size">35</button>
+                            <button class="pizzas__item-size">40</button>
+                        </div>
+                        <div class="pizzas-item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="pizzas__item-price">8$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item">
+                        <div class="pizzas__item-img">
+                            <img class="pizzas__item-image" src="img/products/pizza5.jpg" alt="pizza">
+                            <button class="pizzas__item-redactor-btn">
+                                <img src="img/icons/redburger-icon.png" alt="burger" class="pizzas__item-redactor-img">
+                            </button>
+                        </div>
+                        <p class="pizzas__item-title">Мясное барбекю</p>
+                        <p class="pizzas__item-description">
+                            Мясная пицца с пикантной пепперони, альпийскими колбасками,
+                            Моцареллой, фирменным томатным соусом, луком и соусом Барбекю.
+                        </p>
+                        <div class="pizzas__item-dough-container">
+                            <button class="pizzas__item-dough dough-selected">Тонкое</button>
+                            <button class="pizzas__item-dough">Традиционное</button>
+                        </div>
+                        <div class="pizzas__item-sizes">
+                            <button class="pizzas__item-size size-selected">25</button>
+                            <button class="pizzas__item-size">30</button>
+                            <button class="pizzas__item-size">35</button>
+                            <button class="pizzas__item-size">40</button>
+                        </div>
+                        <div class="pizzas-item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="pizzas__item-price">8$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item">
+                        <div class="pizzas__item-img">
+                            <img class="pizzas__item-image" src="img/products/pizza3.jpg" alt="pizza">
+                            <button class="pizzas__item-redactor-btn">
+                                <img src="img/icons/redburger-icon.png" alt="burger" class="pizzas__item-redactor-img">
+                            </button>
+                        </div>
+                        <p class="pizzas__item-title">Мясное барбекю</p>
+                        <p class="pizzas__item-description">
+                            Мясная пицца с пикантной пепперони, альпийскими колбасками,
+                            Моцареллой, фирменным томатным соусом, луком и соусом Барбекю.
+                        </p>
+                        <div class="pizzas__item-dough-container">
+                            <button class="pizzas__item-dough dough-selected">Тонкое</button>
+                            <button class="pizzas__item-dough">Традиционное</button>
+                        </div>
+                        <div class="pizzas__item-sizes">
+                            <button class="pizzas__item-size size-selected">25</button>
+                            <button class="pizzas__item-size">30</button>
+                            <button class="pizzas__item-size">35</button>
+                            <button class="pizzas__item-size">40</button>
+                        </div>
+                        <div class="pizzas-item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="pizzas__item-price">8$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item">
+                        <div class="pizzas__item-img">
+                            <img class="pizzas__item-image" src="img/products/pizza6.jpg" alt="pizza">
+                            <button class="pizzas__item-redactor-btn">
+                                <img src="img/icons/redburger-icon.png" alt="burger" class="pizzas__item-redactor-img">
+                            </button>
+                        </div>
+                        <p class="pizzas__item-title">Мясное барбекю</p>
+                        <p class="pizzas__item-description">
+                            Мясная пицца с пикантной пепперони, альпийскими колбасками,
+                            Моцареллой, фирменным томатным соусом, луком и соусом Барбекю.
+                        </p>
+                        <div class="pizzas__item-dough-container">
+                            <button class="pizzas__item-dough dough-selected">Тонкое</button>
+                            <button class="pizzas__item-dough">Традиционное</button>
+                        </div>
+                        <div class="pizzas__item-sizes">
+                            <button class="pizzas__item-size size-selected">25</button>
+                            <button class="pizzas__item-size">30</button>
+                            <button class="pizzas__item-size">35</button>
+                            <button class="pizzas__item-size">40</button>
+                        </div>
+                        <div class="pizzas-item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="pizzas__item-price">8$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item">
+                        <div class="pizzas__item-img">
+                            <img class="pizzas__item-image" src="img/products/pizza1.jpg" alt="pizza">
+                            <button class="pizzas__item-redactor-btn">
+                                <img src="img/icons/redburger-icon.png" alt="burger" class="pizzas__item-redactor-img">
+                            </button>
+                        </div>
+                        <p class="pizzas__item-title">Мясное барбекю</p>
+                        <p class="pizzas__item-description">
+                            Мясная пицца с пикантной пепперони, альпийскими колбасками,
+                            Моцареллой, фирменным томатным соусом, луком и соусом Барбекю.
+                        </p>
+                        <div class="pizzas__item-dough-container">
+                            <button class="pizzas__item-dough dough-selected">Тонкое</button>
+                            <button class="pizzas__item-dough">Традиционное</button>
+                        </div>
+                        <div class="pizzas__item-sizes">
+                            <button class="pizzas__item-size size-selected">25</button>
+                            <button class="pizzas__item-size">30</button>
+                            <button class="pizzas__item-size">35</button>
+                            <button class="pizzas__item-size">40</button>
+                        </div>
+                        <div class="pizzas-item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="pizzas__item-price">8$</p>
+                        </div>
+                    </div>
+
+                    <div class="pizzas__item">
+                        <div class="pizzas__item-img">
+                            <img class="pizzas__item-image" src="img/products/pizza5.jpg" alt="pizza">
+                            <button class="pizzas__item-redactor-btn">
+                                <img src="img/icons/redburger-icon.png" alt="burger" class="pizzas__item-redactor-img">
+                            </button>
+                        </div>
+                        <p class="pizzas__item-title">Мясное барбекю</p>
+                        <p class="pizzas__item-description">
+                            Мясная пицца с пикантной пепперони, альпийскими колбасками,
+                            Моцареллой, фирменным томатным соусом, луком и соусом Барбекю.
+                        </p>
+                        <div class="pizzas__item-dough-container">
+                            <button class="pizzas__item-dough dough-selected">Тонкое</button>
+                            <button class="pizzas__item-dough">Традиционное</button>
+                        </div>
+                        <div class="pizzas__item-sizes">
+                            <button class="pizzas__item-size size-selected">25</button>
+                            <button class="pizzas__item-size">30</button>
+                            <button class="pizzas__item-size">35</button>
+                            <button class="pizzas__item-size">40</button>
+                        </div>
+                        <div class="pizzas-item-wrapper">
+                            <button class="btn-tocart pizzas__item-tocart">В корзину</button>
+                            <p class="pizzas__item-price">8$</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- /.pizzas__inner -->
+        </div> <!-- /.container -->
+    </section> <!-- /.pizzas -->
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

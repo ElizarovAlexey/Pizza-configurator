@@ -5,6 +5,19 @@
         font-size: 15px;
         line-height: 25px;
     }
+
+    .slider__container, .slider__item {
+        height: 300px;
+    }
+
+    .pizzas__items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pizzas__item {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 880px) {
@@ -82,9 +95,29 @@
     }
 }
 
+@media screen and (max-width: 680px) {
+    .slider__container, .slider__item {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .pizzas__items {
+        grid-template-columns: 1fr;
+    }
+
+    .pizzas__item {
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 410px) {
     .nav__item-link {
         font-size: 25px;
         line-height: 30px;
+    }
+
+    .slider__container, .slider__item {
+        height: 150px;
     }
 }
