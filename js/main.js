@@ -123,3 +123,31 @@ const smoothScroll = () => {
 }
 
 smoothScroll();
+
+
+// Window for editing ingredients
+const showDetails = () => {
+    const detailBtns = document.querySelectorAll('.pizzas__item-redactor-btn');
+    const detailBlocks = document.querySelectorAll('.pizzas__item-detail');
+    const detailHelpBlocks = document.querySelectorAll('.pizzas__item-active');
+    const detailCloseBtns = document.querySelectorAll('.pizzas__detail-closeBtn');
+
+    const activeClassName = 'pizzas__detail-active';
+
+
+    for (let i = 0; i < detailBtns.length; i++) {
+        detailBtns[i].addEventListener('click', () => {
+            detailBlocks[i].classList.remove(activeClassName);
+            detailHelpBlocks[i].classList.remove(activeClassName);
+        });
+
+        detailCloseBtns[i].addEventListener('click', () => {
+            if (!detailBlocks[i].classList.contains(activeClassName)) {
+                detailBlocks[i].classList.add(activeClassName);
+                detailHelpBlocks[i].classList.add(activeClassName);
+            }
+        });
+    }
+}
+
+showDetails();

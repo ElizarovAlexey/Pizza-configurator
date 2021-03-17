@@ -42,6 +42,114 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+
+    position: relative;
+}
+
+.pizzas__item-active {
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.pizzas__detail-active {
+    display: none;
+}
+
+.pizzas__item-detail {
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+    width: 260px;
+    padding: 20px;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.pizzas__detail-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: @black;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.pizzas__ingredients-list {
+    list-style: none;
+}
+
+.pizzas__ingredients-item {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    &-btnDelete {
+        background: none;
+        border: 0;
+        font-size: 15px;
+        color: gray;
+        cursor: pointer;
+
+        transition: .2s linear;
+        &:hover {
+            color: @red;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+.pizzas__detail-btnAdd {
+    font-size: 14px;
+    color: @light-green;
+    font-weight: 500;
+
+    display: block;
+    margin-bottom: 20px;
+
+    & img {
+        margin-right: 5px;
+        margin-bottom: -3px;
+    }
+
+    transition: .2s linear;
+    &:hover {
+        color: #3e876a;
+    }
+}
+
+.pizzas__detail-separator {
+    margin-bottom: 20px;
+}
+
+.pizzas__detail-closeBtn {
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+
+    transition: .2s linear;
+    &:hover {
+        color: @light-green;
+    }
+}
+
+.pizzas__detail-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .pizzas__item-image {
@@ -132,13 +240,18 @@
 .btn-tocart {
     cursor: pointer;
     display: block;
-    padding: 15px 25px;
+    padding: 13px 23px;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
-    background: #50a684;
+    background: @light-green;
     border: 0;
     border-radius: 25px;
+
+    transition: .15s linear;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .pizzas__item-img {
