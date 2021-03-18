@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.footer {
+    padding: 0 15px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer__col {
+    width: 255px;
+}
+
+.footer__col-title {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: @black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid @black;
+    margin-bottom: 30px;
+}
+
+.footer__list-item {
+    margin-bottom: 15px;
+}
+
+.footer__list-item-link, .footer__list-item {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: @black;
+}
+
+.footer__list-item-link img {
+    margin-bottom: -6px;
+}
+
+.list__inner {
+    display: flex;
+    align-items: center;
+    //justify-content: space-between;
+}
+
+.list__inner-item {
+    margin-right: 20px;    
+}

@@ -6,6 +6,11 @@
         line-height: 25px;
     }
 
+    .footer__inner {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+    }
+
     .slider__container, .slider__item {
         height: 300px;
     }
@@ -23,6 +28,10 @@
 @media screen and (max-width: 880px) {
     .header__burger {
         display: block;
+    }
+
+    .footer__inner {
+        margin-left: 50px;
     }
 
     .header__logo--fixed {
@@ -106,8 +115,19 @@
         grid-template-columns: 1fr;
     }
 
+    .footer__inner {
+        grid-template-columns: 1fr;
+        margin-left: 170px;
+    }
+
     .pizzas__item {
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .footer__inner {
+        margin-left: 100px;
     }
 }
 
@@ -119,5 +139,9 @@
 
     .slider__container, .slider__item {
         height: 150px;
+    }
+
+    .footer__inner {
+        margin-left: 30px;
     }
 }
